@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    font-size: 14px;
+}
+
+.wrapper {
+    background-color: rgb(255, 191, 0);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    animation: ol 4s infinite alternate;
+}
+.wrapper.none{
+    display: none !important;
+}
+.bodytop {
+    font-size: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 10px;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.bodytop h1:hover{
+    animation: alo 3s infinite alternate;
+}
+.bodytop__input{
+    
+}
+.letter_list.fixed{
+    z-index: 15;
+    position: fixed;
+    top: 90px;
+    padding: 10px 0;
+    left: 0;
+    width: 100%;
+
+}
+.letter_list.fixed::before{
+    content: 'A';
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+}
+.mobile__btn.fixed{
+    margin: 0 16px;
+    background-color: #fff;
+    border: 0px solid #fff;
+    border-radius: 0px;
+    z-index: 15;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    width: calc(100% - 32px);
+}
+@keyframes alo{
+    0%{
+        color: #000;
+
+    }
+    100%{
+        color: aquamarine;
+        letter-spacing: 50px;
+    }
+}
+
+@keyframes ol{
+    0%{
+        background-color: rgb(255, 191, 0);
+    }
+    50%{
+        background-color: rgb(75, 143, 191);
+    }
+    75%{
+        background-color: rgb(99, 246, 63);
+    }
+    100%{
+        background-color: rgb(246, 22, 209);
+    }
+}
